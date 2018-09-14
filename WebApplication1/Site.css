@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.col0 {
+    width:50px;
+    min-width:50px;
+    color:black;
+}
+
+.colId {
+    width:40px;
+    min-width:40px;
+    padding-right:10px;
+    text-align:right;
+    color:black;
+}
+
+.colId a {
+    break-inside:avoid;
+
+}
+
+.colId a::after{
+    content:" ";
+}
+
+.colName {
+    min-width:200px;
+    color:black;
+}

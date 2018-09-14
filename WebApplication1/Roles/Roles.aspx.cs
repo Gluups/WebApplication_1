@@ -28,8 +28,11 @@ namespace WebApplication2.Roles
 		{
 			//btnAjout.Click += btnAjout_Click;
 			btnAjout.CommandName = "Insert";
-			GridView1.FooterRow.Visible = true;
-			GridView1.FooterRow.BackColor = Color.Red;
+			if (GridView1.FooterRow != null)
+			{
+				GridView1.FooterRow.Visible = true;
+				GridView1.FooterRow.BackColor = Color.Red;
+			}
 			txbId.Width = 50;
 			txbId.CssClass = "colId";
 		}
@@ -92,6 +95,7 @@ namespace WebApplication2.Roles
 				}
 			}
 			txbId.Text = num.ToString();
+			lblErr.Text = "_";
 			row.Cells[1].Controls.Add(txbId);
 			row.Cells[2].Controls.Add(txbName);
 			txbName.CssClass = "colName";

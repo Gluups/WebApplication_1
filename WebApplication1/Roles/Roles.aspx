@@ -8,7 +8,7 @@
             <asp:Parameter Name="Name" />
         </UpdateParameters>
     </asp:SqlDataSource>
-<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" EnableModelValidation="False" OnDataBound="GridView1_DataBound" OnRowCreated="GridView1_RowCreated" OnRowDataBound="GridView1_RowDataBound" OnRowUpdated="GridView1_RowUpdated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" EnableModelValidation="False" OnDataBound="GridView1_DataBound" OnRowCreated="GridView1_RowCreated" OnRowDataBound="GridView1_RowDataBound" OnRowUpdated="GridView1_RowUpdated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" ShowFooter="True">
     <AlternatingRowStyle BackColor="White" />
     <Columns>
         <asp:CommandField ShowEditButton="True" />
@@ -17,7 +17,7 @@
         <ItemStyle CssClass="colId" />
         </asp:BoundField>
         <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" >
-        <HeaderStyle CssClass="colName" />
+        <HeaderStyle CssClass="colName" ForeColor="White" />
         <ItemStyle CssClass="colName" />
         </asp:BoundField>
         <asp:CommandField ShowSelectButton="True" />
