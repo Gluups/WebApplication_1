@@ -11,7 +11,10 @@
 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" EnableModelValidation="False" OnDataBound="GridView1_DataBound" OnRowCreated="GridView1_RowCreated" OnRowDataBound="GridView1_RowDataBound" OnRowUpdated="GridView1_RowUpdated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" ShowFooter="True">
     <AlternatingRowStyle BackColor="White" />
     <Columns>
-        <asp:CommandField ShowEditButton="True" />
+        <asp:CommandField ShowEditButton="True" >
+        <HeaderStyle CssClass="col0" />
+        <ItemStyle CssClass="col0" />
+        </asp:CommandField>
         <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id">
         <HeaderStyle CssClass="colId" BackColor="#99CCFF" />
         <ItemStyle CssClass="colId" />

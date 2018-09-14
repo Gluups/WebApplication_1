@@ -3,8 +3,16 @@
 
 .col0 {
     width:50px;
-    min-width:50px;
+    min-width:100px;
     color:black;
+}
+
+.col0 a {
+    break-inside: avoid;
+}
+
+.col0 a::after {
+    content: " ";
 }
 
 .colId {
@@ -13,15 +21,6 @@
     padding-right:10px;
     text-align:right;
     color:black;
-}
-
-.colId a {
-    break-inside:avoid;
-
-}
-
-.colId a::after{
-    content:" ";
 }
 
 .colName {
